@@ -32,11 +32,11 @@
         {% if user.is_authenticated %}
         <h3>Hello {{fname}} </h3>
         <h4>You are successfully logged in </h4>
-
+        <button type="submit"><a href="/signout">Signout</a></button>
+        
         {% else %}
         <button type="submit"><a href="/signup">Signup</a></button>
         <button type="submit"><a href="/signin">Signin</a></button>
-        <button type="submit"><a href="/signout">Signout</a></button>
         {% endif %}
 
         <script src="" async defer></script>
